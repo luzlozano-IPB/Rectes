@@ -1,0 +1,658 @@
+<!doctype html>
+<html lang="ca">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rectes al pla</title>
+  <style>
+    :root {
+      --bg: #f6f7fb;
+      --paper: #ffffff;
+      --ink: #182033;
+      --muted: #6b7280;
+      --accent: #4f46e5;
+      --accent-soft: #eef0ff;
+      --line: #e5e7eb;
+      --formula: #f8f9ff;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background:
+        radial-gradient(circle at 15% 0%, #e8ebff 0, transparent 32rem),
+        radial-gradient(circle at 90% 10%, #edf5ff 0, transparent 28rem),
+        var(--bg);
+      color: var(--ink);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+      line-height: 1.65;
+    }
+    .wrapper { max-width: 980px; margin: 0 auto; padding: 34px 20px 70px; }
+    .hero {
+      position: relative;
+      overflow: hidden;
+      border-radius: 28px;
+      padding: 44px clamp(26px, 5vw, 58px);
+      color: white;
+      background: linear-gradient(135deg, rgba(37, 32, 111, 0.75), rgba(91, 92, 226, 0.75)), 
+                  url('Imatges/Fons.jpg') center/cover no-repeat;
+      box-shadow: 0 24px 60px rgba(45, 43, 130, .20);
+      margin-bottom: 26px;
+    }
+    .hero::after {
+      content: "";
+      position: absolute; width: 220px; height: 220px; border-radius: 50%;
+      border: 1px solid rgba(255, 255, 255, .18);
+      right: -55px; top: -70px;
+    }
+    .eye {
+      text-transform: uppercase; letter-spacing: .15em; font-size: .75rem;
+      font-weight: 800; opacity: .78;
+    }
+    h1 {
+      font-size: clamp(2.2rem, 6vw, 4.2rem);
+      line-height: 1.02; margin: 10px 0 12px; letter-spacing: -.04em;
+    }
+    .grid { display: grid; gap: 18px; }
+    .card {
+      position: relative; background: var(--paper); border: 1px solid var(--line);
+      border-radius: 20px; padding: 28px 30px 30px 30px;
+      box-shadow: 0 10px 28px rgba(16, 24, 40, .055);
+    }
+    h2 { margin: 0 0 18px; font-size: 1.45rem; letter-spacing: -.02em; }
+    h3, h4 { font-weight: normal; margin: 5px 0; }
+    
+    .callout {
+      background-color: #ffffff;
+      border-left: 5px solid #0066cc;
+      padding: 15px;
+      margin: 10px 0;
+    }
+    .callout h2 { color: #0047AB; }
+    
+    .indent-list { margin-left: 2cm; }
+    .no-bullets { list-style-type: none; padding-left: 0; }
+
+    .formula-box {
+      background-color: #e2f0fd;
+      border-left: 4px solid var(--accent-color);
+      padding: 10px 15px;
+      margin: 10px 0;
+      border-radius: 0 4px 4px 0;
+    }
+
+
+    @media (max-width: 600px) {
+      .wrapper { padding: 18px 12px 40px; }
+      .card { padding: 24px 18px; }
+      .indent-list { margin-left: 1cm; }
+    }
+    @media print {
+      body { background: white; }
+      .wrapper { max-width: none; padding: 0; }
+      .hero, .card { box-shadow: none; break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+
+<main class="wrapper">
+  <header class="hero">
+    <h1>Rectes al pla</h1>
+  </header>
+<!-- BOTÓ D'IMPRESSIÓ (Només es veurà a la pantalla) -->
+    <button class="btn-imprimir" onclick="window.print()">
+        🖨️ Descarrega el temari en PDF
+    </button>
+  <div class="grid">
+    <!-- Secció 1 -->
+    <section class="card">
+      <h2>1. <a href="https://www.geogebra.org/m/wwbwpsus">  Determinada per: </a> </h2>
+      <div>
+        <h4>Una recta a l'espai bidimensional queda definida de manera única mitjançant un punt i una direcció.</h4>
+        <ul class="indent-list">
+          
+          <li><strong>Punt:</strong> 
+             <div class="formula-box">
+                                    A(a₁, a₂) </div> </li>
+          <li> <strong>Direcció:</strong> </li> 
+            <ul>
+              <div class="formula-box">
+              <li> <strong>Altre punt</strong> B(b₁, b₂)</li>
+              <li><strong>Vector director</strong> <p>
+  <math>
+    <mover>
+      <mi>v</mi>
+      <mo>&#x2192;</mo>
+    </mover>
+    <mo>=</mo>
+    <mo>(</mo>
+    <msub><mi>v</mi><mn>1</mn></msub>
+    <mo>,</mo>
+    <msub><mi>v</mi><mn>2</mn></msub>
+    <mo>)</mo>
+    <mo>&rarr;</mo>
+    <mover>
+      <mi>v</mi>
+      <mo>&#x2192;</mo>
+    </mover>
+    <mo>=</mo>
+    <mover>
+      <mrow><mi>A</mi><mi>B</mi></mrow>
+      <mo>&#x2192;</mo>
+    </mover>
+    <mo>=</mo>
+    <mo>(</mo><mn>1</mn><mo>,</mo><mi>m</mi><mo>)</mo>
+  </math>
+</p> </li>
+              <li><strong>Pendent</strong>  s'utilitza a les equacions explícita i punt/pendent. <p>
+  <math>
+    <mi>m</mi>
+    <mo>=</mo>
+    <mtext>tg</mtext>
+    <mi>(&alpha;)</mi>
+    <mo>=</mo>
+    <mfrac>
+      <msub><mi>v</mi><mn>1</mn></msub>
+      <msub><mi>v</mi><mn>2</mn></msub>
+    </mfrac>
+  </math>
+</p></em></li>
+              <li><strong>Angle  <mi>(&alpha;)</mi> </strong>que forma amb la direcció horitzontal</li>
+              <li>Representació <strong>gràfica</strong></li> </div>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Secció 2 -->
+    <section class="card">
+      <h2>2. <a href="https://www.geogebra.org/graphing/bhmsjerd">  Expressada per una equació </a> </h2>
+      <div class="indent-list no-bullets">
+        <h4><strong>Vectorial:</strong></h4>
+        <div class="formula-box">
+<math >
+    <mrow>
+      <mo>(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>)</mo>
+      <mo>=</mo>
+      <mo>(</mo><msub><mi>a</mi><mn>1</mn></msub><mo>,</mo><msub><mi>a</mi><mn>2</mn></msub><mo>)</mo>
+      <mo>+</mo>
+      <mi>k</mi>
+      <mo>(</mo><msub><mi>v</mi><mn>1</mn></msub><mo>,</mo><msub><mi>v</mi><mn>2</mn></msub><mo>)</mo>
+    </mrow>
+  </math></div>
+        <h4><strong>Paramètriques:</strong></h4>
+  <math class="formula-box">
+    <mrow>
+      <mo>{</mo>
+      <mtable columnalign="left">
+        <mtr>
+          <mtd>
+            <mi>x</mi><mo>=</mo><msub><mi>a</mi><mn>1</mn></msub><mo>+</mo><mi>k</mi><mo>&middot;</mo><msub><mi>v</mi><mn>1</mn></msub>
+          </mtd>
+        </mtr>
+        <mtr>
+          <mtd>
+            <mi>y</mi><mo>=</mo><msub><mi>a</mi><mn>2</mn></msub><mo>+</mo><mi>k</mi><mo>&middot;</mo><msub><mi>v</mi><mn>2</mn></msub>
+          </mtd>
+        </mtr>
+      </mtable>
+    </mrow>
+  </math>
+
+        <h4><strong>Contínua:</strong></h4>
+        <div class="formula-box">
+          <p>
+  <math displaystyle="true">
+    <mfrac>
+      <mrow>
+        <mi>x</mi>
+        <mo>-</mo>
+        <msub><mi>a</mi><mn>1</mn></msub>
+      </mrow>
+      <msub><mi>v</mi><mn>1</mn></msub>
+    </mfrac>
+    <mo>=</mo>
+    <mfrac>
+      <mrow>
+        <mi>y</mi>
+        <mo>-</mo>
+        <msub><mi>a</mi><mn>2</mn></msub>
+      </mrow>
+      <msub><mi>v</mi><mn>2</mn></msub>
+    </mfrac>
+  </math>
+</p>
+</div>
+
+        <h4><strong>General / Implícita:</strong></h4>
+        <div class="formula-box">
+  <p>
+    <math displaystyle="true">
+      <mrow>
+        <mi>A</mi><mi>x</mi>
+        <mo>+</mo>
+        <mi>B</mi><mi>y</mi>
+        <mo>+</mo>
+        <mi>C</mi>
+        <mo>=</mo>
+        <mn>0</mn>
+      </mrow>
+      <mspace width="1em" />
+      <mo>|</mo>
+      <mspace width="1em" />
+      <mrow>
+        <mover><mi>v</mi><mo>→</mo></mover>
+        <mo>=</mo>
+        <mo>(</mo>
+        <mo>-</mo><mi>B</mi>
+        <mo>,</mo>
+        <mi>A</mi>
+        <mo>)</mo>
+      </mrow>
+      <mspace width="1em" />
+      <mo>|</mo>
+      <mspace width="1em" />
+      <mrow>
+        <mi>m</mi>
+        <mo>=</mo>
+        <mo>-</mo>
+        <mfrac>
+          <mi>A</mi>
+          <mi>B</mi>
+        </mfrac>
+      </mrow>
+    </math>
+  </p>
+</div>
+
+        <h4><strong>Explícita:</strong></h4>
+        <div class="formula-box">
+  <p>
+    <math displaystyle="true">
+      <mi>y</mi>
+      <mo>=</mo>
+      <mi>m</mi>
+      <mo>·</mo>
+      <mi>x</mi>
+      <mo>+</mo>
+      <mi>n</mi>
+    </math>
+  </p>
+</div>
+        <h4><strong>Punt/Pendent:</strong></h4>
+        <div class="formula-box">
+  <p>
+    <math displaystyle="true">
+      <mi>y</mi>
+      <mo>-</mo>
+      <msub><mi>a</mi><mn>2</mn></msub>
+      <mo>=</mo>
+      <mi>m</mi>
+      <mo>·</mo>
+      <mo>(</mo>
+      <mi>x</mi>
+      <mo>-</mo>
+      <msub><mi>a</mi><mn>1</mn></msub>
+      <mo>)</mo>
+    </math>
+  </p>
+</div>
+
+        <h4><strong>Canònica:</strong></h4>
+        <div class="formula-box">
+          <p>
+    <math displaystyle="true">
+      <mfrac>
+        <mi>x</mi>
+        <mi>p</mi>
+      </mfrac>
+      <mo>+</mo>
+      <mfrac>
+        <mi>y</mi>
+        <mi>q</mi>
+      </mfrac>
+      <mo>=</mo>
+      <mn>1</mn>
+      <mspace width="1em" />
+      <mo>| punts de tall amb els eixos</mo>
+      <mspace width="1em" />
+      <mrow>
+        <mi>P</mi>
+        <mo>=</mo>
+        <mo>(</mo>
+        <mi>p</mi>
+        <mo>,</mo>
+        <mn>0</mn>
+        <mo>)</mo>
+      </mrow>
+      <mo>,</mo>
+      <mspace width="0.5em" />
+      <mrow>
+        <mi>Q</mi>
+        <mo>=</mo>
+        <mo>(</mo>
+        <mn>0</mn>
+        <mo>,</mo>
+        <mi>q</mi>
+        <mo>)</mo>
+      </mrow>
+    </math>
+  </p>
+</div>
+      </div>
+    </section>
+
+    <!-- Bloc Destacat 1 -->
+    <div class="card callout">
+      <h2>Un punt pertany a una recta</h2>
+      <h4>Un punt P(x₀, y₀) pertany a una recta si al substituir les seves coordenades a l'equació de la recta, la igualtat és certa.</h4>
+    </div>
+<!-- Bloc Destacat 1 -->
+    <div class="card callout">
+      <h2>Informació sobre la recta</h2>
+      <h4>A partir d'un punt i la direcció podem escriure una equació de la recta i d'una equació podem passar a qualsevol altra.</h4>
+      <h4>A partir d'una equació podem trovar punts, vector director, pendent, angle amb OX+ i punts de tall amb els eixos.</h4>
+    </div>
+    <!-- Secció 3 -->
+    <section class="card">
+      <h2>3. Projecció ortogonal i Simètric</h2>
+      <ul class="indent-list">
+        <li>
+          <h4><strong> A' : Projecció ortogonal d'un punt A sobre una recta r:</strong></h4>
+ <p>Intersecció de la recta donada amb una recta ortogonal que passi pel punt A (obtenint el punt A').</p>         
+<div class="formula-box">
+  <p>
+    <math displaystyle="true">
+      <mrow>
+        <mo>{</mo>
+        <mtable columnalign="left">
+          <mtr>
+            <td padding-bottom="0.5em">
+              <mi>r</mi>
+              <mo>:</mo>
+              <mspace width="0.5em" />
+              <mi>A</mi><mi>x</mi>
+              <mo>+</mo>
+              <mi>B</mi><mi>y</mi>
+              <mo>+</mo>
+              <mi>C</mi>
+              <mo>=</mo>
+              <mn>0</mn>
+            </td>
+          </mtr>
+          <mtr>
+            <td>
+              <mi>s</mi>
+              <mo>⊥</mo>
+              <mi>r</mi>
+              <mo>,</mo>
+              <mspace width="0.5em" />
+              <mi>A</mi>
+              <mo>(</mo>
+              <msub><mi>a</mi><mn>1</mn></msub>
+              <mo>,</mo>
+              <msub><mi>a</mi><mn>2</mn></msub>
+              <mo>)</mo>
+              <mo>∈</mo>
+              <mi>s</mi>
+              <mspace width="1em" />
+              <mo>⇒</mo>
+              <mspace width="1em" />
+              <mi>s</mi>
+              <mo>:</mo>
+              <mspace width="0.5em" />
+              <mi>B</mi>
+              <mo>(</mo>
+              <mi>x</mi>
+              <mo>-</mo>
+              <msub><mi>a</mi><mn>1</mn></msub>
+              <mo>)</mo>
+              <mo>-</mo>
+              <mi>A</mi>
+              <mo>(</mo>
+              <mi>y</mi>
+              <mo>-</mo>
+              <msub><mi>a</mi><mn>2</mn></msub>
+              <mo>)</mo>
+              <mo>=</mo>
+              <mn>0</mn>
+            </td>
+          </mtr>
+        </mtable>
+      </mrow>
+    </math>
+  </p>
+</div>
+
+          
+        </li>
+        <li>
+          <h4><strong>A'': Simètric d'un punt A respecte una recta r:</strong></h4>
+          <div class="formula-box"> <p>Punt A'' que verifica: 
+
+    <math displaystyle="true">
+      <mover>
+        <mrow>
+          <mi>A</mi>
+          <msup><mi>A</mi><mo>′</mo></msup>
+        </mrow>
+        <mo>→</mo>
+      </mover>
+      <mo>=</mo>
+      <mover>
+        <mrow>
+          <msup><mi>A</mi><mo>′</mo></msup>
+          <msup><mi>A</mi><mo>′′</mo></msup>
+        </mrow>
+        <mo>→</mo>
+      </mover>
+    </math>
+  </p>
+</div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Secció 4 -->
+    <section class="card">
+      <h2>4. Posició recta r -punt A</h2>
+      
+      <ol class="indent-list no-bullets">
+        <li>
+          <article>
+            <h3>a) El punt pertany a la recta </h3>
+            <ul>
+              <li>Al substituir el punt, es verifica l'equació de la recta.</li>
+              <li>La distància és 0.</li>
+            </ul>
+          </article>
+        </li>
+        <li>
+          <article>
+            <h3>b) El punt no pertany a la recta</h3>
+            <ul>
+              <li>Al substituir el punt, no es verifica l'equació de la recta (igualtat falsa).</li>
+              <li>La distància és igual a la distància entre el punt i la seva projecció ortogonal sobre la recta. També es pot calcular utilitzant la fòrmula següent:</li>
+             
+<div class="formula-box">
+  <p>
+    <math displaystyle="true">
+      <mrow>
+
+        <!-- Fórmula de la distància -->
+        
+        <mtext>dist</mtext>
+       <mo>(</mo>
+       <mi>A</mi><mi>(</mi>
+        <msub><mi>x</mi><mn>0</mn></msub>
+        <mo>,</mo>
+        <mspace width="0.2em" />
+        <msub><mi>y</mi><mn>0</mn></msub>
+        <mi>)</mi>
+        <mo>,</mo>
+        <mspace width="0.2em" />
+        <mi>r</mi>
+        <mo>:</mo>
+              <mspace width="0.5em" />
+              <mi>A</mi><mi>x</mi>
+              <mo>+</mo>
+              <mi>B</mi><mi>y</mi>
+              <mo>+</mo>
+              <mi>C</mi>
+              <mo>=</mo>
+              <mn>0</mn>
+        <mo>)</mo>
+        <mo>=</mo>
+        <mfrac>
+          <mrow>
+            <mo>|</mo>
+            <mi>A</mi><mo>·</mo><msub><mi>x</mi><mn>0</mn></msub>
+            <mo>+</mo>
+            <mi>B</mi><mo>·</mo><msub><mi>y</mi><mn>0</mn></msub>
+            <mo>+</mo>
+            <mi>C</mi>
+            <mo>|</mo>
+          </mrow>
+          <msqrt>
+            <mrow>
+              <msup><mi>A</mi><mn>2</mn></msup>
+              <mo>+</mo>
+              <msup><mi>B</mi><mn>2</mn></msup>
+            </mrow>
+          </msqrt>
+        </mfrac>
+      </mrow>
+    </math>
+  </p>
+</div>
+            </ul>
+          </article>
+        </li>
+        <li>
+         
+        </li>
+      </ol>
+    </section>
+     <!-- Secció 4 -->
+    <section class="card">
+      <h2>5. Posició relativa de dues rectes</h2>
+      
+      <ol class="indent-list no-bullets">
+        <li>
+          <article>
+            <h3>a) Coincidents</h3>
+            <ul>
+              <li>Comprovar que tenen la mateixa direcció i un punt en comú.</li>
+              <li>El sistema format per les dues rectes té infinites solucions (0 = 0).</li>
+              <li>La intersecció és tota la recta.</li>
+              <li>L'angle que formen és 0°.</li>
+              <li>La distància és 0.</li>
+            </ul>
+          </article>
+        </li>
+        <li>
+          <article>
+            <h3>b) Paral·leles</h3>
+            <ul>
+              <li>Comprovar que tenen la mateixa direcció i un punt d'una recta no pertany a l'altra.</li>
+              <li>El sistema format per les dues rectes no té solució (0 = S).</li>
+              <li>No hi ha intersecció.</li>
+              <li>L'angle que formen és 0°.</li>
+              <li>La distància és <code>dist(Punt d'una recta, altra recta)</code>.</li>
+              <h4><strong>Distància entre dues rectes paral·leles:</strong></h4>
+<div class="formula-box">
+  <p>
+    <math displaystyle="true">
+      <mrow>
+        <!-- Definicions prèvies -->
+        <mi>r</mi>
+        <mo>:</mo>
+        <mspace width="0.3em" />
+        <mi>a</mi><mi>x</mi>
+        <mo>+</mo>
+        <mi>b</mi><mi>y</mi>
+        <mo>+</mo>
+        <mi>c</mi>
+        <mo>=</mo>
+        <mn>0</mn>
+        
+        <mspace width="1.2em" />
+        <mo>|</mo>
+        <mspace width="1.2em" />
+
+        <msub><mi>P</mi><mi>s</mi></msub>
+        <mo>=</mo>
+        <mi>(</mi>
+        <msub><mi>x</mi><mn>0</mn></msub>
+        <mo>,</mo>
+        <mspace width="0.2em" />
+        <msub><mi>y</mi><mn>0</mn></msub>
+        <mi>)</mi>
+
+        <mspace width="1.2em" />
+        <mo>⇒</mo>
+        <mspace width="1.2em" />
+
+        <!-- Fórmula de la distància -->
+        <mtext>dist</mtext>
+        <mi>(</mi>
+        <mi>r</mi>
+        <mo>,</mo>
+        <mspace width="0.2em" />
+        <mi>s</mi>
+        <mi>)</mi>
+        <mo>=</mo>
+        <mtext>dist</mtext>
+        <mi>(</mi>
+        <msub><mi>P</mi><mi>r</mi></msub>
+        <mo>,</mo>
+        <mspace width="0.2em" />
+        <mi>s</mi>
+        <mi>)</mi>
+        <mo>=</mo>
+        <mfrac>
+          <mrow>
+            <mo>|</mo>
+            <mi>A</mi><mo>·</mo><msub><mi>x</mi><mn>0</mn></msub>
+            <mo>+</mo>
+            <mi>B</mi><mo>·</mo><msub><mi>y</mi><mn>0</mn></msub>
+            <mo>+</mo>
+            <mi>C</mi>
+            <mo>|</mo>
+          </mrow>
+          <msqrt>
+            <mrow>
+              <msup><mi>A</mi><mn>2</mn></msup>
+              <mo>+</mo>
+              <msup><mi>B</mi><mn>2</mn></msup>
+            </mrow>
+          </msqrt>
+        </mfrac>
+      </mrow>
+    </math>
+  </p>
+</div>
+            </ul>
+          </article>
+        </li>
+        <li>
+          <article>
+            <h3>c) Incidents (es tallen)</h3>
+            <ul>
+              <li>Les dues rectes no tenen la mateixa direcció.</li>
+              <li>El sistema format per les dues rectes té solució única (x = a, y = b).</li>
+              <li>La intersecció és un punt (solució del sistema).</li>
+              <li>L'angle que formen es calcula amb el producte escalar dels seus vectors directors.</li>
+              <li>La distància és 0.</li>
+            </ul>
+          </article>
+        </li>
+      </ol>
+    </section>
+  </div>
+</main>
+
+</body>
+</html>
