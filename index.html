@@ -74,8 +74,10 @@
     .no-bullets { list-style-type: none; padding-left: 0; }
 
     .formula-box {
+     
       background-color: #e2f0fd;
       border-left: 4px solid var(--accent-color);
+       border-left: 4px solid #3b82f6; /* Aquesta línia fa el destacat vertical */
       padding: 10px 15px;
       margin: 10px 0;
       border-radius: 0 4px 4px 0;
@@ -116,7 +118,6 @@
             <div class="formula-box">  <ul> 
                                     <li> A(a₁, a₂) </div></li> 
           <li> 
-          
             <strong>Direcció:</strong>  
     <div class="formula-box">
     <ul>
@@ -171,8 +172,8 @@
     <!-- Secció 2 -->
     <section class="card">
       <h2>2. <a href="https://www.geogebra.org/graphing/bhmsjerd">  Expressada per una equació </a> </h2>
-      <div class="indent-list no-bullets">
-        <h4><strong>Vectorial:</strong></h4>
+ <ul>
+       <li><h4><strong>Vectorial:</strong></h4>
         <div class="formula-box">
 <math >
     <mrow>
@@ -184,7 +185,7 @@
       <mo>(</mo><msub><mi>v</mi><mn>1</mn></msub><mo>,</mo><msub><mi>v</mi><mn>2</mn></msub><mo>)</mo>
     </mrow>
   </math></div>
-        <h4><strong>Paramètriques:</strong></h4>
+      <li> <h4><strong>Paramètriques:</strong></h4>
   <math class="formula-box">
     <mrow>
       <mo>{</mo>
@@ -203,7 +204,7 @@
     </mrow>
   </math>
 
-        <h4><strong>Contínua:</strong></h4>
+       <li>  <h4><strong>Contínua:</strong></h4>
         <div class="formula-box">
           <p>
   <math displaystyle="true">
@@ -228,7 +229,7 @@
 </p>
 </div>
 
-        <h4><strong>General / Implícita:</strong></h4>
+        <li> <h4><strong>General / Implícita:</strong></h4>
         <div class="formula-box">
   <p>
     <math displaystyle="true">
@@ -269,7 +270,7 @@
   </p>
 </div>
 
-        <h4><strong>Explícita:</strong></h4>
+        <li> <h4><strong>Explícita:</strong></h4>
         <div class="formula-box">
   <p>
     <math displaystyle="true">
@@ -283,7 +284,7 @@
     </math>
   </p>
 </div>
-        <h4><strong>Punt/Pendent:</strong></h4>
+        <li> <h4><strong>Punt/Pendent:</strong></h4>
         <div class="formula-box">
   <p>
     <math displaystyle="true">
@@ -302,7 +303,7 @@
   </p>
 </div>
 
-        <h4><strong>Canònica:</strong></h4>
+       <li>  <h4><strong>Canònica:</strong></h4>
         <div class="formula-box">
           <p>
     <math displaystyle="true">
@@ -360,14 +361,12 @@
     <!-- Secció 3 -->
     <section class="card">
       <h2>3. Projecció ortogonal i Simètric</h2>
-      <ul class="indent-list">
-        <li>
-          <h4><strong> A' : Projecció ortogonal d'un punt A sobre una recta r:</strong></h4>
- <p>Intersecció de la recta donada amb una recta ortogonal que passi pel punt A (obtenint el punt A').</p>         
+      <ul>
+      <li><h4><strong>A' : Projecció ortogonal d'un punt A sobre una recta r:</strong> Intersecció de la recta donada amb una recta ortogonal que passi pel punt A (obtenint el punt A').</h4>
 <div class="formula-box">
   <p>
     <math displaystyle="true">
-      <mrow>
+
         <mo>{</mo>
         <mtable columnalign="left">
           <mtr>
@@ -431,8 +430,8 @@
           
         </li>
         <li>
-          <h4><strong>A'': Simètric d'un punt A respecte una recta r:</strong></h4>
-          <div class="formula-box"> <p>Punt A'' que verifica: 
+          <h4><strong>A'': Simètric d'un punt A respecte una recta r:</strong> Punt A'' que verifica:  </h4> 
+          <div class="formula-box"> <p>
 
     <math displaystyle="true">
       <mover>
@@ -473,31 +472,31 @@
     <!-- Secció 4 -->
     <section class="card">
       <h2>4. Posició recta r -punt A</h2>
-      
-      <ol class="indent-list no-bullets">
-        <li>
-          <article>
-            <h3>a) El punt pertany a la recta </h3>
-            <ul>
+       <ul>
+       <li><h4><strong>El punt pertany a la recta </strong></h4>
+        <ul>
               <li>Al substituir el punt, es verifica l'equació de la recta.</li>
               <li>La distància és 0.</li>
-            </ul>
-          </article>
-        </li>
-        <li>
-          <article>
-            <h3>b) El punt no pertany a la recta</h3>
-            <ul>
-              <li>Al substituir el punt, no es verifica l'equació de la recta (igualtat falsa).</li>
+        </ul>
+        <li><h4><strong>El punt no pertany a la recta</strong></h4>
+          <ul>
+                          <li>Al substituir el punt, no es verifica l'equació de la recta (igualtat falsa).</li>
               <li>La distància és igual a la distància entre el punt i la seva projecció ortogonal sobre la recta. També es pot calcular utilitzant la fòrmula següent:</li>
-             
+             </ul>
 <div class="formula-box">
   <p>
     <math displaystyle="true">
       <mrow>
 
         <!-- Fórmula de la distància -->
-        
+         <mtext>dist</mtext>
+        <mi>(</mi>
+        <mi>A</mi>
+        <mo>,</mo>
+        <mspace width="0.2em" />
+        <mi>r</mi>
+        <mi>)</mi>
+        <mo>=</mo>
         <mtext>dist</mtext>
        <mo>(</mo>
        <mi>A</mi><mi>(</mi>
@@ -545,19 +544,14 @@
             </ul>
           </article>
         </li>
-        <li>
-         
-        </li>
+       
       </ol>
     </section>
      <!-- Secció 4 -->
     <section class="card">
       <h2>5. Posició relativa de dues rectes</h2>
-      
-      <ol class="indent-list no-bullets">
-        <li>
-          <article>
-            <h3>a) Coincidents</h3>
+    <ul>
+       <li><h4><strong>Coincidents</strong></h4>
             <ul>
               <li>Comprovar que tenen la mateixa direcció i un punt en comú.</li>
               <li>El sistema format per les dues rectes té infinites solucions (0 = 0).</li>
@@ -569,16 +563,19 @@
         </li>
         <li>
           <article>
-            <h3>b) Paral·leles</h3>
+           <h4><strong>Paral·leles</strong></h4>
             <ul>
               <li>Comprovar que tenen la mateixa direcció i un punt d'una recta no pertany a l'altra.</li>
               <li>El sistema format per les dues rectes no té solució (0 = S).</li>
               <li>No hi ha intersecció.</li>
               <li>L'angle que formen és 0°.</li>
-              <li>La distància és <code>dist(Punt d'una recta, altra recta)</code>.</li>
-              <h4><strong>Distància entre dues rectes paral·leles r i s:</strong></h4>
+              <li>La distància és igual a: <strong>dist(Punt d'una recta, altra recta)</strong>.</li>
+               </ul>
 <div class="formula-box">
   <p>
+    
+              <h4><strong>Distància entre dues rectes paral·leles r i s:</strong></h4>
+
     <math displaystyle="true">
       <mrow>
         <!-- Definicions prèvies -->
@@ -652,10 +649,12 @@
             </ul>
           </article>
         </li>
+
+        <ul>
         <li>
           <article>
-            <h3>c) Incidents (es tallen)</h3>
-            <ul>
+            <h4><strong> Incidentens o secants (es tallen) </strong></h4> 
+         <ul>
               <li>Les dues rectes no tenen la mateixa direcció.</li>
               <li>El sistema format per les dues rectes té solució única (x = a, y = b).</li>
               <li>La intersecció és un punt (solució del sistema).</li>
@@ -671,7 +670,7 @@
 
 <section class="card">
   <h2>6. Inequacions (equacions de semiplans)</h2>
-  <ol class="indent-list no-bullets">
+  <ul>
   <p>Per resoldre una inequació de primer grau amb dues incògnites, ho hem de fer <strong> <a href="https://www.geogebra.org/graphing/wtj7kbtf">  gràficament </a></strong>.</p>
   
   <div class="math-block">
@@ -685,7 +684,7 @@
     </div>
   </div>
 
-  <p>En qualsevol dels casos anteriors hem de començar representant la recta: <strong>ax + by = c</strong></p>
+  <p>En qualsevol dels casos anteriors hem de començar representant la recta: <strong>ax + by = c</strong><p>Pasos</p></p> 
 </ol>
   <ol>
     <li>
