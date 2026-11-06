@@ -360,116 +360,40 @@ button:hover{background:#3730a3}
       <h4>A partir d'un punt i la direcció podem escriure una equació de la recta i d'una equació podem passar a qualsevol altra.</h4>
       <h4>A partir d'una equació podem trobar punts, vector director, pendent, angle amb OX+ i punts de tall amb els eixos.</h4>
     </div>
-    <!-- Secció 3 -->
+<!-- Secció 4 -->
     <section class="card">
-      <h2>3. Projecció ortogonal i Simètric</h2>
-      <ul>
-      <li><h4><strong>A' : Projecció ortogonal d'un punt A sobre una recta r:</strong> Intersecció de la recta donada amb una recta ortogonal que passi pel punt A (obtenint el punt A').</h4>
-<div class="formula-box">
-  <p>
-    <math displaystyle="true">
-
-        <mo>{</mo>
-        <mtable columnalign="left">
-          <mtr>
-            <td padding-bottom="0.5em">
-              <mi>r</mi>
-              <mo>:</mo>
-              <mspace width="0.5em" />
-              <mi>A</mi><mi>x</mi>
-              <mo>+</mo>
-              <mi>B</mi><mi>y</mi>
-              <mo>+</mo>
-              <mi>C</mi>
-              <mo>=</mo>
-              <mn>0</mn>
-            </td>
-          </mtr>
-          <mtr>
-            <td>
-              <mi>s</mi>
-              <mo>⊥</mo>
-              <mi>r</mi>
-              <mo>,</mo>
-              <mspace width="0.5em" />
-              <mi>A</mi>
-              <mo>(</mo>
-              <msub><mi>a</mi><mn>1</mn></msub>
-              <mo>,</mo>
-              <msub><mi>a</mi><mn>2</mn></msub>
-              <mo>)</mo>
-              <mo>∈</mo>
-              <mi>s</mi>
-              <mspace width="1em" />
-              <mo>⇒</mo>
-              <mspace width="1em" />
-              <mi>s</mi>
-              <mo>:</mo>
-              <mspace width="0.5em" />
-              <mi>B</mi>
-              <mo>(</mo>
-              <mi>x</mi>
-              <mo>-</mo>
-              <msub><mi>a</mi><mn>1</mn></msub>
-              <mo>)</mo>
-              <mo>-</mo>
-              <mi>A</mi>
-              <mo>(</mo>
-              <mi>y</mi>
-              <mo>-</mo>
-              <msub><mi>a</mi><mn>2</mn></msub>
-              <mo>)</mo>
-              <mo>=</mo>
-              <mn>0</mn>
-            </td>
-          </mtr>
-        </mtable>
-      </mrow>
-    </math>
-  </p>
-</div>
-
-          
+      <h2>3. Posició relativa de dues rectes</h2>
+    <ul>
+       <li><h4><strong>Coincidents</strong></h4>
+            <ul>
+              <li>Comprovar que tenen la mateixa direcció i un punt en comú.</li>
+              <li>El sistema format per les dues rectes té infinites solucions (0 = 0).</li>
+            </ul>
+          </article>
         </li>
         <li>
-          <h4><strong>A'': Simètric d'un punt A respecte una recta r:</strong> Punt A'' que verifica:  </h4> 
-          <div class="formula-box"> <p>
+          <article>
+           <h4><strong>Paral·leles</strong></h4>
+            <ul>
+              <li>Comprovar que tenen la mateixa direcció i un punt d'una recta no pertany a l'altra.</li>
+              <li>El sistema format per les dues rectes no té solució (0 = S).</li>
+               </ul>
 
-    <math displaystyle="true">
-      <mover>
-        <mrow>
-          <mi>A</mi>
-          <msup><mi>A</mi><mo>′</mo></msup>
-        </mrow>
-        <mo>→</mo>
-      </mover>
-      <mo>=</mo>
-      <mover>
-        <mrow>
-          <msup><mi>A</mi><mo>′</mo></msup>
-          <msup><mi>A</mi><mo>′′</mo></msup>
-        </mrow>
-        <mo>→</mo>
-      </mover>
-      <mspace width="1em" />
-              <mo>⇒</mo>
-        <msup><mi>A</mi><mo>′′</mo></msup>
-        <mo>=</mo>
-        <mi>A</mi>
-        <mo>+</mo>
-      <mover>
-        <mrow>
-          <msup><mi>A</mi></msup>
-          <msup><mi>A</mi><mo>′</mo></msup>
-        </mrow>
-        <mo>→</mo>
-      </mover>
-    </math>
-  </p>
-</div>
+        <li>
+          <article>
+            <h4><strong> Incidents o secants (es tallen) </strong></h4> 
+         <ul>
+              <li>Les dues rectes no tenen la mateixa direcció.</li>
+              <li>El sistema format per les dues rectes té solució única (x = a, y = b).</li>
+              
+            </ul>
+          </article>
         </li>
-      </ul>
+      </ol>
     </section>
+  </div>
+
+    <
 
     <!-- Secció 4 -->
     <section class="card">
@@ -483,7 +407,7 @@ button:hover{background:#3730a3}
         <li><h4><strong>El punt no pertany a la recta</strong></h4>
           <ul>
                           <li>Al substituir el punt, no es verifica l'equació de la recta (igualtat falsa).</li>
-              <li>La distància és igual a la distància entre el punt i la seva projecció ortogonal sobre la recta. També es pot calcular utilitzant la fòrmula següent:</li>
+              <li>La distància és la distància més curta entre el punt i la recta. Es pot calcular utilitzant la fòrmula següent:</li>
              </ul>
 <div class="formula-box">
   <p>
@@ -549,14 +473,129 @@ button:hover{background:#3730a3}
        
       </ol>
     </section>
+ <section class="card">
+      <h2>5. Projecció ortogonal i Simètric</h2>
+      <ul>
+      <li><h4><strong>A' : Projecció ortogonal d'un punt A sobre una recta r:</strong> Intersecció de la recta donada amb una recta ortogonal que passi pel punt A (obtenint el punt A').</h4>
+<div class="formula-box">
+  <p>
+    <math displaystyle="true">
+
+        <mo>{</mo>
+        <mtable columnalign="left">
+          <mtr>
+            <td padding-bottom="0.5em">
+              <mi>r</mi>
+              <mo>:</mo>
+              <mspace width="0.5em" />
+              <mi>A</mi><mi>x</mi>
+              <mo>+</mo>
+              <mi>B</mi><mi>y</mi>
+              <mo>+</mo>
+              <mi>C</mi>
+              <mo>=</mo>
+              <mn>0</mn>
+            </td>
+          </mtr>
+          <mtr>
+            <td>
+              <mi>s</mi>
+              <mo>⊥</mo>
+              <mi>r</mi>
+              <mo>,</mo>
+              <mspace width="0.5em" />
+              <mi>A</mi>
+              <mo>(</mo>
+              <msub><mi>a</mi><mn>1</mn></msub>
+              <mo>,</mo>
+              <msub><mi>a</mi><mn>2</mn></msub>
+              <mo>)</mo>
+              <mo>∈</mo>
+              <mi>s</mi>
+              <mspace width="1em" />
+              <mo>⇒</mo>
+              <mspace width="1em" />
+              <mi>s</mi>
+              <mo>:</mo>
+              <mspace width="0.5em" />
+              <mi>B</mi>
+              <mo>(</mo>
+              <mi>x</mi>
+              <mo>-</mo>
+              <msub><mi>a</mi><mn>1</mn></msub>
+              <mo>)</mo>
+              <mo>-</mo>
+              <mi>A</mi>
+              <mo>(</mo>
+              <mi>y</mi>
+              <mo>-</mo>
+              <msub><mi>a</mi><mn>2</mn></msub>
+              <mo>)</mo>
+              <mo>=</mo>
+              <mn>0</mn>
+            </td>
+          </mtr>
+        </mtable>
+      </mrow>
+    </math>
+  </p>
+</div>    
+        </li>
+        <h4>💡 La distància entre un punt i una recta també es pot calcular com el mòdul del vector
+      
+      <math> <mover>
+        <mrow>
+          <msup><mi>A</mi></msup>
+          <msup><mi>A</mi><mo>′</mo></msup>
+        </mrow>
+        <mo>→</mo>
+      </mover>
+    </math></h4>
+        <li>
+          <h4><strong>A'': Simètric d'un punt A respecte una recta r:</strong> Punt A'' que verifica:  </h4> 
+          <div class="formula-box"> <p>
+
+    <math displaystyle="true">
+      <mover>
+        <mrow>
+          <mi>A</mi>
+          <msup><mi>A</mi><mo>′</mo></msup>
+        </mrow>
+        <mo>→</mo>
+      </mover>
+      <mo>=</mo>
+      <mover>
+        <mrow>
+          <msup><mi>A</mi><mo>′</mo></msup>
+          <msup><mi>A</mi><mo>′′</mo></msup>
+        </mrow>
+        <mo>→</mo>
+      </mover>
+      <mspace width="1em" />
+              <mo>⇒</mo>
+        <msup><mi>A</mi><mo>′′</mo></msup>
+        <mo>=</mo>
+        <mi>A</mi>
+        <mo>+</mo>
+      <mover>
+        <mrow>
+          <msup><mi>A</mi></msup>
+          <msup><mi>A</mi><mo>′</mo></msup>
+        </mrow>
+        <mo>→</mo>
+      </mover>
+    </math>
+  </p>
+</div>
+        </li>
+      </ul>
+    </section>
      <!-- Secció 4 -->
     <section class="card">
-      <h2>5. Posició relativa de dues rectes</h2>
+      <h2>6. Intersecció, angle i distància entre dues rectes</h2>
     <ul>
        <li><h4><strong>Coincidents</strong></h4>
             <ul>
-              <li>Comprovar que tenen la mateixa direcció i un punt en comú.</li>
-              <li>El sistema format per les dues rectes té infinites solucions (0 = 0).</li>
               <li>La intersecció és tota la recta.</li>
               <li>L'angle que formen és 0°.</li>
               <li>La distància és 0.</li>
@@ -567,8 +606,6 @@ button:hover{background:#3730a3}
           <article>
            <h4><strong>Paral·leles</strong></h4>
             <ul>
-              <li>Comprovar que tenen la mateixa direcció i un punt d'una recta no pertany a l'altra.</li>
-              <li>El sistema format per les dues rectes no té solució (0 = S).</li>
               <li>No hi ha intersecció.</li>
               <li>L'angle que formen és 0°.</li>
               <li>La distància és igual a: <strong>dist(Punt d'una recta, l'altra recta)</strong>.</li>
@@ -657,8 +694,6 @@ button:hover{background:#3730a3}
           <article>
             <h4><strong> Incidents o secants (es tallen) </strong></h4> 
          <ul>
-              <li>Les dues rectes no tenen la mateixa direcció.</li>
-              <li>El sistema format per les dues rectes té solució única (x = a, y = b).</li>
               <li>La intersecció és un punt (solució del sistema).</li>
               <li>L'angle que formen es calcula amb el producte escalar dels seus vectors directors.</li>
               <li>La distància és 0.</li>
@@ -671,7 +706,7 @@ button:hover{background:#3730a3}
 
 
 <section class="card">
-  <h2>6. Inequacions (equacions de semiplans)</h2>
+  <h2>7. Inequacions (equacions de semiplans)</h2>
   <ul>
   <p>Per resoldre una inequació de primer grau amb dues incògnites, ho hem de fer <strong> <a href="https://www.geogebra.org/graphing/wtj7kbtf">  gràficament </a></strong>.</p>
   
