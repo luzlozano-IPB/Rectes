@@ -577,7 +577,7 @@ button:hover{background:#3730a3}
               <mo>⇒</mo>
         <msup><mi>A</mi><mo>′′</mo></msup>
         <mo>=</mo>
-        <mi>A</mi>
+        <msup><mi>A</mi><mo>′</mo></msup>
         <mo>+</mo>
       <mover>
         <mrow>
@@ -614,9 +614,6 @@ button:hover{background:#3730a3}
                </ul>
 <div class="formula-box">
   <p>
-    
-              <h4><strong>Distància entre dues rectes paral·leles r i s:</strong></h4>
-
     <math displaystyle="true">
       <mrow>
         <!-- Definicions prèvies -->
@@ -695,11 +692,59 @@ button:hover{background:#3730a3}
         <li>
           <article>
             <h4><strong> Incidents o secants (es tallen) </strong></h4> 
-         <ul>
+            <ul>
               <li>La intersecció és un punt (solució del sistema).</li>
               <li>L'angle que formen es calcula amb el producte escalar dels seus vectors directors.</li>
+              <div class="formula-box">
+                <p>
+                  <math displaystyle="true">
+                    
+                    <mo>cos</mo>
+                    <mi>&alpha;</mi>
+                    <mo>=</mo>
+                    <mfrac>
+                      <mrow>
+                        <mover><msub><mi>v</mi><mi>r</mi></msub><mo>&rarr;</mo></mover>
+                        <mo>&middot;</mo>
+                        <mover><msub><mi>v</mi><mi>s</mi></msub><mo>&rarr;</mo></mover>
+                      </mrow>
+                      <mrow>
+                        <mo>|</mo><mover><msub><mi>v</mi><mi>r</mi></msub><mo>&rarr;</mo></mover><mo>|</mo>
+                        <mo>&middot;</mo>
+                        <mo>|</mo><mover><msub><mi>v</mi><mi>s</mi></msub><mo>&rarr;</mo></mover><mo>|</mo>
+                      </mrow>
+                    </mfrac>
+                    <mo>=</mo>
+                    <mfrac>
+                      <mrow>
+                        <msub><mi>v</mi><mi>r1</mi></msub>
+                        <msub><mi>v</mi><mi>s1</mi></msub>
+                        <mo>+</mo>
+                        <msub><mi>v</mi><mi>r2</mi></msub>
+                        <msub><mi>v</mi><mi>s2</mi></msub>
+                      </mrow>
+                      <mrow>
+                        <msqrt>
+                          <msubsup><mi>v</mi><mi>r1</mi><mn>2</mn></msubsup>
+                          <mo>+</mo>
+                          <msubsup><mi>v</mi><mi>r2</mi><mn>2</mn></msubsup>
+                        </msqrt>
+                        <mo>&middot;</mo>
+                        <msqrt>
+                          <msubsup><mi>v</mi><mi>s1</mi><mn>2</mn></msubsup>
+                          <mo>+</mo>
+                          <msubsup><mi>v</mi><mi>s2</mi><mn>2</mn></msubsup>
+                        </msqrt>
+                      </mrow>
+                    </mfrac>
+                  </math>
+                </p>
+              </div>
+
               <li>La distància és 0.</li>
             </ul>
+          </article>
+        </li>
           </article>
         </li>
       </ol>
